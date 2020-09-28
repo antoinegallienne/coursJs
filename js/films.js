@@ -5,7 +5,9 @@ let numberOfEpisodes = 12;
 let episodeTime = 45;
 let commercialTime = 5;
 let totalShowTime = (episodeTime + commercialTime) * numberOfEpisodes * numberOfSeasons;
-
+let episodeTitle = 'episode 1';
+let episodeDuration = 45;
+let hasBeenWatched = true;
 
 // ==========================================
 
@@ -14,11 +16,20 @@ paragraph.innerText = `${numberOfSeasons} seasons, ${numberOfEpisodes} episodes 
 
 Total viewing time: ${totalShowTime} minutes`
 
+// ==========================================
+// objet
+
+episode = {
+    title:'titre 1',
+    duration: '45',
+    hasBeenWatched: 'true',
+};
+let episodetitle = episode.title;
+let episodeduration = episode.duration;
+let episodehasBeenWatched = episode.hasBeenWatched;
 
 
-let episodeTitle = 'episode 1';
-let episodeDuration = 45;
-let hasBeenWatched = true;
+
 // =========================================
 
 document.querySelector('#episode-info').innerText = `Episode: ${episodeTitle}
@@ -27,8 +38,7 @@ ${hasBeenWatched ? 'Already watched' : 'Not yet watched'}`
 
 
 
-
-// Create constants here
+// Constante
 // =====================================
 const hoursPerDay =24;
 const minutesPerHour = 60;
