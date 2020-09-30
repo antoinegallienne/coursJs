@@ -16,14 +16,38 @@ paragraph.innerText = `${numberOfSeasons} seasons, ${numberOfEpisodes} episodes 
 
 Total viewing time: ${totalShowTime} minutes`
 
+
+
+// Constante
+// =====================================
+const hoursPerDay =24;
+const minutesPerHour = 60;
+const secondsPerMinute = 60;
+// =====================================
+
+const dayInput = document.querySelector('#day-input');
+const calculateButton = document.querySelector('#calculate-button');
+const hours = document.querySelector('#hours');
+const minutes = document.querySelector('#minutes');
+const seconds = document.querySelector('#seconds');
+
+calculateButton.addEventListener('click', () => {
+    let days = dayInput.value;
+    let calcHours = days * hoursPerDay;
+    let calcMinutes = calcHours * minutesPerHour;
+    let calcSeconds = calcMinutes * secondsPerMinute;
+
+    hours.innerText = `${calcHours} hours`;
+    minutes.innerText = `${calcMinutes} minutes`;
+    seconds.innerText = `${calcSeconds} seconds`;
+});
+
+
+
 // ==========================================
 // objet
 
-episode = {
-    title:'titre 1',
-    duration: '45',
-    hasBeenWatched: 'true',
-};
+episode = {title:'titre 1', duration: '45', hasBeenWatched: 'true',};
 let episodetitle = episode.title;
 let episodeduration = episode.duration;
 let episodehasBeenWatched = episode.hasBeenWatched;
@@ -85,34 +109,5 @@ ${episodes[i].hasBeenWatched ? 'Already watched' : 'Not yet watched'}`;
     newDiv.append(newParagraph);
     body.append(newDiv);
 }
-
-// Constante
-// =====================================
-const hoursPerDay =24;
-const minutesPerHour = 60;
-const secondsPerMinute = 60;
-// =====================================
-
-const dayInput = document.querySelector('#day-input');
-const calculateButton = document.querySelector('#calculate-button');
-const hours = document.querySelector('#hours');
-const minutes = document.querySelector('#minutes');
-const seconds = document.querySelector('#seconds');
-
-calculateButton.addEventListener('click', () => {
-    let days = dayInput.value;
-    let calcHours = days * hoursPerDay;
-    let calcMinutes = calcHours * minutesPerHour;
-    let calcSeconds = calcMinutes * secondsPerMinute;
-
-    hours.innerText = `${calcHours} hours`;
-    minutes.innerText = `${calcMinutes} minutes`;
-    seconds.innerText = `${calcSeconds} seconds`;
-});
-
-
-
-
-
 
 

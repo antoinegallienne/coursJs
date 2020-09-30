@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <meta name="description"  content="Cours JS OpenClassrooms">
+    <meta name="author"       content="Gallienne Antoine">
+    <meta name="copyright"    content="MIT">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="style/films.css">
+
+    <title>Boucles</title>
+</head>
+<body>
+
+<main>
+    <h1>Cours JS OpenClassrooms</h1>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" >Index</a>
+                </li>
+                <li>
+                    <a href="declaration.html" >Déclaration</a>
+                </li>
+                <li>
+                    <a href="condition.html" >Condition</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>for </h2>
+
+    <p>const numberOfPassengers = 10;<br>
+        <br>
+        for (let i = 0; i < numberOfPassengers; i++) {<br>
+        console.log("Passager embarqué !");<br>
+        }<br>
+        <br>
+        console.log("Tous les passagers sont embarqués !");<br>
+    </p>
+    <h2>for of </h2>
+    <p>for ( let serie of episodes){<br>
+    serie.hasBeenWatched = false;
+    }</p>
+
+    <h2>for in </h2>
+
+    <p>const passengers = [<br>
+        "Will Alexander",<br>
+        "Sarah Kate'",<br>
+        "Audrey Simon",<br>
+        "Tao Perkington"<br>
+        ]<br>
+        <br>
+        for (let i in passengers) {<br>
+        console.log("Embarquement du passager " + passengers[i]);<br>
+        }<br>
+    </p>
+
+    <h2>while</h2>
+
+<p>let seatsLeft = 10;<br>
+    let passengersStillToBoard = 8;<br>
+    <br>
+    let passengersBoarded = 0;<br>
+    <br>
+    while (seatsLeft > 0 && passengersStillToBoard > 0) {<br>
+    passengersBoarded++; // un passager embarque<br>
+    passengersStillToBoard--; // donc il y a un passager de moins à embarquer<br>
+    seatsLeft--; // et un siège de moins<br>
+    }<br>
+    <br>
+    console.log(passengersBoarded); // imprime 8, car il y a 8 passagers pour 10 sièges<br>
+</p>
+
+    <script src="js/boucle.js"></script>
+</body>
+</html>

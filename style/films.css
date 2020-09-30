@@ -3,6 +3,9 @@ body {
     color: #EEE;
     font-family: 'Roboto Slab', serif;
 }
+nav {
+    font-size: 1.5rem;
+}
 
 .series-frame {
     max-width: 600px;
@@ -22,5 +25,4 @@ body {
 .series-frame h3 {
     margin-right: 20px;
 }
-
 

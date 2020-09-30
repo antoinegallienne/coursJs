@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <meta name="description"  content="Cours JS OpenClassrooms">
+    <meta name="author"       content="Gallienne Antoine">
+    <meta name="copyright"    content="MIT">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="style/films.css">
+
+    <title>Déclaration</title>
+</head>
+<body>
+
+<main>
+    <h1>Cours JS OpenClassrooms</h1>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" >index</a>
+                </li>
+                <li>
+                    <a href="condition.html" >Condition</a>
+                </li>
+                <li>
+                    <a href="boucle.html" >Boucles</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<h1>Cours JS OpenClassrooms</h1>
+<h2>Variable</h2>
+<p>
+    let numberOfSeasons = 6;<br>
+    let numberOfEpisodes = 12;<br>
+    let episodeTime = 45;<br>
+    let commercialTime = 5;<br>
+    let totalShowTime = (episodeTime + commercialTime) * numberOfEpisodes * numberOfSeasons;<br>
+    let episodeTitle = 'episode 1';<br>
+    let episodeDuration = 45;<br>
+    let hasBeenWatched = true;
+</p>
+
+<section class="series-frame">
+    <h3>The Story of Tau</h3>
+    <p id="info"></p>
+</section>
+
+
+<h2>Constante</h2>
+<p>
+    const hoursPerDay =24;<br>
+    const minutesPerHour = 60;<br>
+    const secondsPerMinute = 60;
+</p>
+
+<section class="my-form">
+    <label for="day-input">Number of days</label>
+    <input id="day-input" type="number" min="1">
+    <button id="calculate-button">Calculate!</button>
+    <p id="hours"></p>
+    <p id="minutes"></p>
+    <p id="seconds"></p>
+</section>
+
+<h2> Objet</h2>
+<p>episode = {title:'titre 1', duration: '45', hasBeenWatched: 'true',};</p>
+
+<section class="series-frame">
+    <h3>The Story of Tau</h3>
+    <p id="episode-info"></p>
+</section>
+
+<h2>Déclaration class</h2>
+<p>class Episode {<br>
+    constructor(title,duration,hasBeenWatched) {<br>
+    this.title = title;<br>
+    this.duration = duration;<br>
+    this.hasBeenWatched = hasBeenWatched;<br>
+    }<br>
+    }</p>
+<div class="series-frame">
+    <h3>The Story of Tau</h3>
+    <p id="first-episode-info"></p>
+</div>
+
+<div class="series-frame">
+    <h3>The Story of Tau</h3>
+    <p id="second-episode-info"></p>
+</div>
+
+<div class="series-frame">
+    <h3>The Story of Tau</h3>
+    <p id="third-episode-info"></p>
+</div>
+
+
+<h2>Déclaration array</h2>
+<p>let episodes = [firstEpisode, secondEpisode, thirdEpisode];</p>
+
+</main>
+<script src="js/films.js"></script>
+
+</body>
+</html>
